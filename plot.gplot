@@ -4,7 +4,6 @@ set datafile columnheaders
 
 set terminal pngcairo size 1400,900 enhanced font "Sans,10"
 
-# CPU usage graph
 set output "cpu_usage.png"
 
 set title "CPU Usage Over Time"
@@ -18,7 +17,6 @@ set key top right
 plot "system_usage.csv" using 2:3 \
     with lines linewidth 2 title "CPU Usage"
 
-# RAM usage graph
 set output "ram_usage.png"
 
 set title "RAM Usage Over Time"
